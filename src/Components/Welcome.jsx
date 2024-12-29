@@ -7,6 +7,7 @@ import Grid from '@mui/material/Grid';
 import { Container } from '@mui/system';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Cake from '../Assets/cake.jpg'
+import { Link } from 'react-router-dom';
 
 
 const StyledContainer = styled(Container)(({ theme }) => ({
@@ -41,7 +42,7 @@ function WelcomeSection() {
               <Typography variant="body1" paragraph>
                 Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning.
               </Typography>
-              <StyledButton variant="contained">Explore Menu</StyledButton>
+              <Link to='/products' variant="contained">Explore Menu</Link>
             </Grid>
             <Grid item xs={12} md={6}>
               <img
