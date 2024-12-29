@@ -14,14 +14,12 @@ const StyledContainer = styled(Container)(({ theme }) => ({
   padding: theme.spacing(8, 0, 6),
 }));
 
-const StyledButton = styled(Button)(({ theme }) => ({
-  marginTop: theme.spacing(4),
-  borderRadius: 0,
-  backgroundColor: '#FFC107',
-  '&:hover': {
-    backgroundColor: '#FFD700',
-  },
-}));
+const StyledLink = styled(Link)`
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+`;
 
 function WelcomeSection() {
   const matches = useMediaQuery('(max-width:600px)');
@@ -39,10 +37,10 @@ function WelcomeSection() {
               <Typography variant="h2" gutterBottom>
                 Delicious Foods For Everyone
               </Typography>
-              <Typography variant="body1" paragraph>
+              <Typography variant="body1" paragraph mb={6}>
                 Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning.
               </Typography>
-              <Link to='/products' variant="contained">Explore Menu</Link>
+              <StyledLink to='/products' variant="contained">Explore Menu</StyledLink>
             </Grid>
             <Grid item xs={12} md={6}>
               <img

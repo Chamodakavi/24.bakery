@@ -5,6 +5,7 @@ import "./App.css";
 import Products from "./Components/Products";
 import { Route, Router, Routes } from "react-router-dom";
 import Expand from "./Components/Expand";
+import Order from "./Components/Order";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/order" element={<Order />} />
 
         <Route path="/bread" element={<Expand product="Bread" />} />
         <Route path="/pastries" element={<Expand product="Pastries" />} />

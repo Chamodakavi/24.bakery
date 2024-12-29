@@ -136,9 +136,11 @@ const Header = () => {
               +94 76 567 4353
             </Typography>
           </IconButton>
-          <Button color="secondary" sx={{ mx: "10px" }}>
-            Order Now
-          </Button>
+          <Link to='/order'>
+            <Button color="secondary" sx={{ mx: "10px" }}>
+              Order Now
+            </Button>
+          </Link>
         </Box>
       </Toolbar>
     </StyledAppBar>
